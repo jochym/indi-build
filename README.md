@@ -1,5 +1,3 @@
-Docker images for libindi build environment
-===================
 
 ![Docker Build Status](https://img.shields.io/docker/build/jochym/indi-docker.svg)
 [Images](https://hub.docker.com/r/jochym/indi-docker/builds/)
