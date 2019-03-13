@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ .$1 == '.' ] ; then 
-    export REPO=indilib 
+    export REPO=indilib/indi 
 else 
     export REPO=$1 
 fi 
@@ -12,9 +12,9 @@ else
     export CIRCLE_BRANCH=$2 ; 
 fi 
 
-git clone https://github.com/$REPO/indi.git 
+git clone https://github.com/${REPO}.git indi
 cd indi 
 git checkout $CIRCLE_BRANCH
 
-./.circleci/build-all.sh
-./.circleci/run-tests.sh
+./CI/circle/build-all.sh
+./CI/circle/run-tests.sh
