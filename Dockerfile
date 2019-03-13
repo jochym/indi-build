@@ -20,5 +20,5 @@ RUN apt-get clean && apt-get autoclean
 
 WORKDIR /home
 
-ADD https://raw.githubusercontent.com/jochym/indi/master/docker/run-build.sh /home/
+ADD https://raw.githubusercontent.com/jochym/indi-build/master/run-build.sh /home/
 RUN chmod a+x /home/run-build.sh
