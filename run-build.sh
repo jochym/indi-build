@@ -16,5 +16,5 @@ git clone https://github.com/${REPO}.git indi
 cd indi 
 git checkout $CIRCLE_BRANCH
 
-./CI/circle/build-all.sh
+./CI/circle/build-core.sh
 ./CI/circle/run-tests.sh
