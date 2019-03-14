@@ -1,8 +1,9 @@
 # Setup OS here
-
+FROM jochym/indi-build-core:stretch
 
 # Build config
 WORKDIR /home
 
-ADD https://raw.githubusercontent.com/jochym/indi-build/master/run-build.sh /home/
-RUN chmod a+x /home/run-build.sh
+RUN git clone git@github.com:jochym/indi-base.git indi
+RUN cd /home/indi/ && CI/circle/build-core.sh
+RUN rm -rf /home/indi
