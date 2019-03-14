@@ -4,6 +4,6 @@ FROM jochym/indi-build-core:stretch
 # Build config
 WORKDIR /home
 
-RUN git clone git@github.com:jochym/indi-base.git indi
+RUN git clone https://github.com/jochym/indi-base.git indi
 RUN cd /home/indi/ && CI/circle/build-core.sh
 RUN rm -rf /home/indi
