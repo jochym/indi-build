@@ -12,8 +12,6 @@ RUN zypper --non-interactive install lsb-release \
         python-devel vim rtl-sdr-devel limesuite-devel vim
 
 RUN zypper -n install gpsd python-gpsd python-curses gpsd-devel
-#RUN zypper -n download gpsd-devel libgps23
-#RUN rpm -iv --nodeps /var/cache/zypp/packages/OSS/suse/x86_64/*gps*rpm
 
 # Install googletest
 WORKDIR /home
