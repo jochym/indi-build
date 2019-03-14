@@ -7,3 +7,5 @@ WORKDIR /home
 RUN git clone https://github.com/jochym/indi-base.git indi
 RUN cd /home/indi/ && CI/circle/build-core.sh
 RUN rm -rf /home/indi
+ADD run-drivers-build.sh .
+RUN chmod a+x run-drivers-build.sh
