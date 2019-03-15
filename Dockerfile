@@ -9,4 +9,4 @@ RUN chmod a+x run-libs-build.sh
 
 RUN git clone https://github.com/jochym/indi-base.git core
 RUN bash core/CI/build-core.sh
-RUN rm -rf /home/core /home/build # clean up image
+RUN rm -rf /home/core /home/build
