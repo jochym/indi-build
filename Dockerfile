@@ -1,6 +1,11 @@
 # Setup OS here
 FROM ubuntu/bionic
 
+RUN apt-get -qq update && apt-get -qqy install \
+        cdbs dpkg-dev debhelper cmake curl dcraw \
+        fakeroot wget git ssh vim && \
+        rm -rf /var/lib/apt/lists/*
+
 # Build config
 WORKDIR /home
 
