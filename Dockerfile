@@ -1,5 +1,5 @@
-# Setup OS here
 FROM jochym/indi-build-core:stretch
+# Setup OS here
 
 # Build config
 WORKDIR /home
