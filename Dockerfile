@@ -1,5 +1,5 @@
 # Setup OS here
-
+FROM ubuntu/bionic
 
 # Build config
 WORKDIR /home
