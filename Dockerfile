@@ -8,7 +8,8 @@ RUN apt-get -qq update && apt-get -qqy install \
         libfftw3-dev zlib1g-dev libconfuse-dev python3-all-dev doxygen \
         libboost-test-dev python-all-dev swig g++ libftdi1-dev \
         libdc1394-22-dev libavdevice-dev libavcodec-dev \
-        googletest clang lsb-release dirmngr vim
+        googletest clang lsb-release dirmngr vim && \
+        rm -rf /var/lib/apt/lists/*
 
 # Build and install gtest and gmock libraries
 WORKDIR /usr/src/googletest
