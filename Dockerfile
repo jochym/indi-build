@@ -1,8 +1,8 @@
 FROM debian:stretch
 
-RUN apt-get -qq update && apt-get -qqy dist-upgrade
+#RUN apt-get -qq update && apt-get -qqy dist-upgrade
 
-RUN apt-get -qqy install \
+RUN apt-get -qq update && apt-get -qqy install \
         cdbs dpkg-dev debhelper cmake curl dcraw fakeroot wget git ssh \
         libcurl4-gnutls-dev libboost-dev libboost-regex-dev libcfitsio-dev \
         libftdi-dev libdc1394-22-dev libgphoto2-dev libgps-dev libgsl-dev libjpeg-dev libtiff5-dev \
