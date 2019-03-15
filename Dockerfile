@@ -1,4 +1,4 @@
-FROM jochym/indi-build-core:stretch
+FROM jochym/indi-build-core:buster
 # Setup OS here
 
 # Build config
